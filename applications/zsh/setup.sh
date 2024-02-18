@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting autojump)
+plugins=(git autojump)
 theme="amuse"
 
 # Copy the zshrc file to ~/.zshrc
