@@ -1,59 +1,12 @@
-# oh my zsh configuration
-# https://github.com/ohmyzsh/ohmyzsh/wiki/Settings
-export ZSH="$HOME/.oh-my-zsh"
 
-ZSM_THEME=amuse
-plugins=(git dircycle autojump)
-ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ohmyzsh"
+# Base zsh options
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=10000
+unsetopt beep
 
 # Update settings
 zstyle ':omz:update' mode auto
 
 # Check for updates every 7 days
 zstyle ':omz:update' frequency 7
-
-
-# Completion settings
-ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
-COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-CASE_SENSITIVE=true
-HYPHEN_INSENSITIVE=true
-
-
-# Automatic title
-DISABLE_AUTO_TITLE="true"
-
-
-ENABLE_CORRECTION=true
-HIST_STAMPS="dd.mm.yyyy"
-
-
-
-# Aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-
-alias gc="git commit --verbose"
-alias ga="git add"
-alias gp="git push"
-alias gs="git status"
-
-
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=10000
-unsetopt beep
-bindkey -e
-
-
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/jstiverson/.zshrc'
-
-autoload -Uz compinit promptinit
-compinit
-promptinit
-
-# Temp until I find a better one
-prompt fire
