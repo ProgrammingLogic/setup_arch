@@ -1,3 +1,10 @@
+# oh my zsh configuration
+# https://github.com/ohmyzsh/ohmyzsh/wiki/Settings
+export ZSH="$HOME/.oh-my-zsh"
+
+
+
+
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
