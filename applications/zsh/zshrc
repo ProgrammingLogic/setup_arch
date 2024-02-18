@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 alias gc="git commit --verbose"
 alias ga="git add"
 alias gp="git push"
+alias gs="git status"
 
 
 # Lines configured by zsh-newuser-install
