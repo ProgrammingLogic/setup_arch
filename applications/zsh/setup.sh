@@ -16,4 +16,9 @@ sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"$theme\"/" ~/.zshrc
 sed -i "s/plugins=(git)/plugins=(${plugins[*]})/" ~/.zshrc
 
 
-# Append custom .zshrc options to the end of the file
+# Copy custon .zshenv to ~/.zshenv
+cp -vf ./zshenv ~/.zshenv
+
+
+# Append custom .zshrc to the end of the file
+cat ./zshrc >> ~/.zshrc
