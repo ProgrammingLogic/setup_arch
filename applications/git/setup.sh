@@ -17,11 +17,6 @@ else
 fi
 
 read -p "Please enter your name: " name
-if [[ $name =~ ^[A-Za-z]+$ ]]; then
-    echo "Name is valid, continuing..."
-else
-    echo "Name is invalid."
-fi
 
 read -p "Do you want to use vim as the default editor? (y/n): " use_vim
 if [[ $use_vim == "y" ]]; then
