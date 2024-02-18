@@ -1,3 +1,17 @@
+# If not running interactively, don't do anything
+# We might not need this 
+[[ $- != *i* ]] && return
+
+
+# Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+alias gc="git commit --verbose"
+alias ga="git add"
+alias gp="git push"
+
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
